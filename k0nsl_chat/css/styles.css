@@ -1,0 +1,181 @@
+.ssn {
+    display: block;
+}
+.ssn  td {
+    font-size: 18px;
+    height: 30px;
+    vertical-align: top;
+    padding-top: 10px;
+}  
+.ssn tr td:first-child {
+    padding-top: 20px;
+}
+.ssn input[type="checkbox"] {
+    margin-top:10px;
+}
+.ssn input[type="text"] {
+    width: 300px;
+}
+.ssn textarea {
+    width:300px;
+    height: 200px;
+}
+.ssn i {
+    font-size:12px;
+    color: #5A5A5A;
+}
+#chat {
+    position:absolute;
+    background:black;
+    opacity: 0.8;
+    width:80%;
+    height:200px;
+    z-index: 9999; 
+    left: 0px; 
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: fixed; /*Fix topsition(ignore scroll)*/
+    color: white;
+}
+#chat .chat_history { 
+    width:100%;
+    overflow-y: auto;
+    height: 100%;
+    overflow-x: hidden;
+}
+#chat .close_chat {
+    position: absolute;
+    top: 26px;
+    z-index: 100000;
+    right: 23px;
+    width:16px;
+    height: 16px;
+    background: url(../img/close.png) no-repeat center;
+}
+#chat .chat_history p {
+    color:#4eff00; /* text color */
+    font-family: monospace;
+    /*height: 20px;*/
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+#chat .chat_history b .admin{
+    color:yellowgreen; /* ADMIN text color*/
+    line-height: 0px; 
+}
+#chat .chat_history p strong {
+    color:#309200; /* username text color */
+}
+#chat .chat_history .private {
+    color:#3498DB !important; /* private text color*/
+}
+#chat .chat_history a {
+    color:white !important; /* admin links text color*/
+}
+#chat input {
+    border: none;
+    outline: none;
+    background: black;
+    width: 98%;
+    margin: 0;
+    padding: 1px;
+    color: #4eff00;
+    font-family: monospace;
+    font-size: 14px; 
+    z-index: 10000;
+}
+#chat div.chat-modal {
+    position: absolute;
+    background: whitesmoke;
+    opacity: 0.8;
+    width: 107px;
+    height: 60px;
+    padding: 5px;
+    z-index: 10000;
+    top: 100px;
+    left: 100px;
+    color: red;
+    text-align: right;
+    border: 6px solid white;
+} 
+#chat div.chat-modal a{
+    color:black;
+    text-decoration: none; 
+}
+#chat-button2 {
+    z-index: 9999; 
+    text-align: center;
+    height: 41px;
+    background: url(../img/btn_bg.png);
+    bottom: 0px;
+    right: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    position: fixed;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+}
+#chat-button {
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    background: url(../img/slider.png) no-repeat center;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    position: fixed;
+}
+#chat-status {
+    background: url(../img/pacman.gif) left no-repeat;
+    height: 30px;
+    padding-top: 5px;
+    width: 300px;
+    margin-left: 10px;
+    position: relative;
+}
+#chat-status p {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+/* WHITE STYLES */
+#chat.white .chat_history p {
+    color:white;
+}
+#chat.white .chat_history p strong {
+    color:whitesmoke;
+}
+#chat.white input {
+    color:white;
+}
+/* BLACK STYLES */
+#chat.black .chat_history p {
+    color:black;
+}
+#chat.black .chat_history p strong {
+    color:gray;
+}
+#chat.black input {
+    color:black;
+    background: whitesmoke;
+}
+#chat.black {
+    background: whitesmoke;
+} 
